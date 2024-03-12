@@ -1,0 +1,1 @@
+print("texto a imprimir por consola")
