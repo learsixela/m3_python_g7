@@ -23,4 +23,15 @@ print("texto",12)
 print("texto"+"34")
 
 #INTERPOLACION
-print(f"el numero es {numero}")
+print(f"el numero es {numero+2}")
+nombre = "Mijail"
+print(f"Tu nombre es {nombre} y tu edad es {numero}")
+print("Tu nombre es \n"+nombre)
+#string.format()
+print("Tu nombre es {} y tu edad es {}".format(nombre,numero))
+# formato con %: %s para string y %d para numeros
+print("Tu nombre es %s y tu edad es %d" % (nombre,numero))
+# metodo con cadena
+apellido = "paLma loRen"
+print(apellido.title())
+
