@@ -61,5 +61,19 @@ V   F = V
 F   V = V 
 F   F = F *
 
-
 """
+#soy estudiante y ingreso a clases todos los dias
+# True and False -> False
+
+#me gusta comer fruta o me gusta comer verduras 
+# True or True   => True
+# False or False => False
+
+#ser o no ser
+#True or False => True
+#False or True => True 
+
+-[-(-V)]=
+-[-(F)]
+-[V]
+False
