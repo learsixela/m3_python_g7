@@ -73,7 +73,9 @@ F   F = F *
 #True or False => True
 #False or True => True 
 
+"""
 -[-(-V)]=
 -[-(F)]
 -[V]
 False
+""" 
