@@ -56,3 +56,9 @@ print(lista_int)
 lst_str = [elemento for elemento in lista if type(elemento) is str ]
 print(len(lst_str))
 print(lst_str)
+
+##Diccionario Comprehesion
+claves = ['nombre','apellido','edad','altura']
+valores = ['Juan','Pérez', 33, 1.75]
+diccionario2 = {k:v for k,v in zip(claves, valores)}
+print(diccionario2)
