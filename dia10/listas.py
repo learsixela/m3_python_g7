@@ -41,6 +41,7 @@ lista_vacia.append("Martes")
 lista_vacia.append("Miercoles")
 print(lista_vacia)
 system("clear")# o system("cls") para windows
+
 #insert(indice,elemento) => inserta un elemento en una posicion especifica
 lista_vacia.insert(3,"Jueves")
 print(lista_vacia)#['Lunes', 'Martes', 'Miercoles', 'Jueves']
@@ -94,3 +95,40 @@ print(lista_vacia)#['Domingo', 'Jueves', 'Lunes', 'Martes', 'Miercoles', 'Sabado
 lista_pares.sort()
 print(lista_pares)#[2, 4, 6, 8, 10, 13]
 print(lista_vacia)#
+system("clear")
+
+#RESPALDO DE LISTA
+
+lista1 = lista_pares#[2, 4, 6, 8, 10, 13]
+#NO ES UN RESPALDO DE DATOS
+
+lista2 = lista_pares.copy() #SI ES UN RESPALDO DE LA LISTA ORIGINAL
+lista3 = lista_pares[:]     #SI ES UN RESPALDO DE LA LISTA ORIGINAL
+lista4 = lista_pares + []   #SI ES UN RESPALDO DE LA LISTA ORIGINAL
+lista5 = lista_pares * 1    #SI ES UN RESPALDO DE LA LISTA ORIGINAL
+lista6 = list(lista_pares)  #SI ES UN RESPALDO DE LA LISTA ORIGINAL
+
+lista_pares.pop()
+print("lista de pares",lista_pares)#
+print(lista1)
+print(lista2)
+print(lista3)
+print(lista4)
+print(lista5)
+print(lista6)
+
+#sorted(lista, reverse= True), ordena descendentemente, pero no es permanente
+sorted(lista_pares, reverse= True)#ordena desc
+sorted(lista_pares)#ordena asc
+sorted(lista_pares, reverse= False)#ordena asc
+
+print(sorted(lista_pares, reverse= True))#[10, 8, 6, 4, 2]
+print(lista_pares)#[2, 4, 6, 8, 10]
+
+#index(elemento)=> retorna el indice  del elemento que se busca en una lista
+
+print("indice del elemento 8 es: ",lista_pares.index(8))
+#print("indice del elemento 13 es: ",lista_pares.index(13))#ValueError: 13 is not in list
+
+lista_final = lista_pares + lista_vacia
+print("lista final",lista_final)
