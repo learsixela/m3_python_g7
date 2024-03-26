@@ -72,6 +72,21 @@ notas2 = {
 notas2.update(notas)
 print(notas2)#
 #COLISIONES: al existir duplicidad de claves, se conserva el valor del dicionario anexado
+system("clear")
 
+print(notas2.keys())
+#dict_keys(['Mijail', 'Israel', 'Felipe', 'Antonio', 'Daniela', 'Vicente', 'Julio'])
+print(notas2.values())
+#dict_values([2, 1, 6, 5, 5, None, 5])
 
+print(type(None))#<class 'NoneType'>
+system("clear")
+print(notas2.items())
+#dict_items([('Mijail', 2), ('Israel', 1), ('Felipe', 6), ('Antonio', 5), ('Daniela', 5), ('Vicente', None), ('Julio', 5)])
 
+#get(clave)-> retorna el valor asociado a la clave
+print(notas2.get('Mijail'))#2
+#Al consultar por una clave no existente retornara por default None
+print(notas2.get('Alexis'))#None
+#Se puede especificar el valor de retorno al no existir la clave
+print(notas2.get('Alexis', "Valor no existe"))#

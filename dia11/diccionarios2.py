@@ -8,7 +8,7 @@ for i in range(cant_mascotas):#0,1,2
     
     mascota = {
         "nombre":"",
-        "raza":"",
+        "raza":None,
         "peso":0.0,
         "chip": False,
     }
